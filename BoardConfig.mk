@@ -92,6 +92,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/p880/bluetooth
 
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB -DNEEDS_VECTORIMPL_SYMBOLS
 
+# Override healthd HAL
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.x3
+
 # Radio fixes
 BOARD_RIL_CLASS := ../../../device/lge/p880/ril/
 
