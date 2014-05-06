@@ -136,6 +136,13 @@ PRODUCT_PACKAGES += \
     lights.x3 \
     nfc.x3
 
+# F2FS filesystem
+PRODUCT_PACKAGES += \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
+    f2fstat
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/init.rawip:system/bin/init.rawip \
     $(LOCAL_PATH)/prebuilt/init.rmnet:system/bin/init.rmnet \
