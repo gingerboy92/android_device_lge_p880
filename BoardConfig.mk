@@ -23,7 +23,7 @@ ARCH_ARM_USE_NON_NEON_MEMCPY := true
 TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
 
-BOARD_KERNEL_CMDLINE := 
+BOARD_KERNEL_CMDLINE := zcache
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
@@ -39,7 +39,7 @@ TARGET_RECOVERY_PRE_COMMAND := "/system/bin/setup-recovery"
 
 # Try to build the kernel
 TARGET_KERNEL_SOURCE := kernel/lge/x3
-TARGET_KERNEL_CONFIG := omni_x3_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_x3_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
