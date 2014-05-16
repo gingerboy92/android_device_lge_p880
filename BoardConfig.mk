@@ -41,7 +41,7 @@ TARGET_RECOVERY_PRE_COMMAND := "/system/bin/setup-recovery"
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Try to build the kernel
-TARGET_KERNEL_SOURCE := kernel/lge/x3
+TARGET_KERNEL_SOURCE := kernel/lge/p880
 TARGET_KERNEL_CONFIG := cyanogenmod_x3_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
