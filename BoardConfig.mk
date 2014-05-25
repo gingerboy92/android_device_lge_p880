@@ -142,3 +142,8 @@ MR_INIT_DEVICES := device/lge/p880/mr_init_devices.c
 MR_DPI := xhdpi
 MR_FSTAB := device/lge/p880/recovery/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
+
+#SlimSaber
+TARGET_GCC_VERSION_EXP := 4.8
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7
+TARGET_USE_O3 := true
