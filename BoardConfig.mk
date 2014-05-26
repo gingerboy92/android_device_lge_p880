@@ -20,8 +20,8 @@ ARCH_ARM_HAVE_32_BYTE_CACHE_LINE := true
 ARCH_ARM_USE_NON_NEON_MEMCPY := true
 
 # Optimization build flags
-TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp -flto
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp -flto
 
 BOARD_KERNEL_CMDLINE := zcache
 BOARD_KERNEL_BASE := 0x10000000
