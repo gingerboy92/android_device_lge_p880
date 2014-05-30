@@ -156,3 +156,4 @@ TW_INCLUDE_FB2PNG := true
 #SlimSaber
 TARGET_GCC_VERSION_EXP := 4.8
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7/bin/arm-eabi-
+TARGET_USE_O3 := true
