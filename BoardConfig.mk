@@ -159,4 +159,4 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7/bin/arm-eabi-
 TARGET_USE_O3 := true
 SUPPRES_UNUSED_WARNING := true
 OPT_MEMORY := true
-STRICT_ALIASING := false
+STRICT_ALIASING := true
