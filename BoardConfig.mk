@@ -41,7 +41,7 @@ TARGET_RECOVERY_PRE_COMMAND := "/system/bin/setup-recovery"
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Try to build the kernel
-TARGET_KERNEL_SOURCE := kernel/lge/x3
+TARGET_KERNEL_SOURCE := kernel/lge/optimusplay
 TARGET_KERNEL_CONFIG := cyanogenmod_x3_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -152,3 +152,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/tegra-udc.0/gadget/lun0/file"
 TW_INCLUDE_FB2PNG := true
+
+#TOOLCHAIN
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7
+TARGET_GCC_VERSION_EXP := 4.8
