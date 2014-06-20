@@ -190,6 +190,10 @@ on boot
     write /sys/devices/system/cpu/cpufreq/interactive/dynamic_freq_mode 1
     write /sys/devices/system/cpu/cpufreq/interactive/min_sample_time 20000
 
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1700000
+    write /sys/devices/system/cpu/cpuquiet/tegra_cpuquiet/enable 1
+    write /sys/devices/system/cpu/cpuquiet/current_governor balanced
+
 # Power Save for camera preview and recording
     chown media camera /sys/devices/platform/tegra_camera/power_save_preview
     chown media camera /sys/devices/platform/tegra_camera/power_save_rec
