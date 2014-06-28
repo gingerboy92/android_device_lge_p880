@@ -37,9 +37,6 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 
 TARGET_RECOVERY_PRE_COMMAND := "/system/bin/setup-recovery"
 
-# F2FS filesystem
-TARGET_USERIMAGES_USE_F2FS := true
-
 # Try to build the kernel
 TARGET_KERNEL_SOURCE := kernel/lge/optimusplay
 TARGET_KERNEL_CONFIG := cyanogenmod_x3_defconfig
@@ -50,6 +47,8 @@ TARGET_RECOVERY_FSTAB = device/lge/p880/rootdir/fstab.x3
 RECOVERY_FSTAB_VERSION = 2
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# F2FS filesystem
+TARGET_USERIMAGES_USE_F2FS := true
 TARGET_SPECIFIC_HEADER_PATH := device/lge/p880/include
 
 BOARD_NO_ALLOW_DEQUEUE_CURRENT_BUFFER := true
