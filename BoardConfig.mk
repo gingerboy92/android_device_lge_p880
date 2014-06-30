@@ -38,7 +38,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PRE_COMMAND := "/system/bin/setup-recovery"
 
 # Try to build the kernel
-TARGET_KERNEL_SOURCE := kernel/lge/optimusplay
+TARGET_KERNEL_SOURCE := kernel/lge/iodak
 TARGET_KERNEL_CONFIG := cyanogenmod_x3_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
