@@ -422,3 +422,9 @@ write /sys/kernel/mm/ksm/pages_to_scan 100
 write /sys/kernel/mm/ksm/sleep_millisecs 500
 write /sys/kernel/mm/ksm/deferred_timer 1
 write /sys/kernel/mm/ksm/run 1
+
+# Intelli_plug
+write /sys/module/intelli_plug/parameters/nr_run_profile_sel 4
+chown root root /sys/module/intelli_plug/parameters/nr_possible_cores
+chmod 0664 /sys/module/intelli_plug/parameters/nr_possible_cores
+write /sys/module/intelli_plug/parameters/nr_possible_cores 2
