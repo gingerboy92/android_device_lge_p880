@@ -432,3 +432,6 @@ write /sys/module/intelli_plug/parameters/nr_run_profile_sel 4
 chown root root /sys/module/intelli_plug/parameters/nr_possible_cores
 chmod 0664 /sys/module/intelli_plug/parameters/nr_possible_cores
 write /sys/module/intelli_plug/parameters/nr_possible_cores 2
+
+# smt
+write /sys/devices/system/cpu/sched_mc_power_savings 2
